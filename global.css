@@ -7,7 +7,6 @@
     --gray: #ECEBEA;
 }
 
-
 html {
     background-color: var(--creamwhite);
     font-family: "Dosis", Verdana, Geneva, Tahoma, sans-serif;
@@ -24,11 +23,8 @@ body {
 .content_wrap { /* add a page margin */
     width: 80%;
     margin: 0px auto;
+    max-width: 1600px;
 }
-.dark_background {
-    background-color: var(--dark_black);
-    width: 100%;
-  }
 
 .button { /*uni code for buttons - then add other classes for color and other specifics */ 
     display: flex;
@@ -61,10 +57,21 @@ body {
 .text_white {
     color: var(--creamwhite);
 }
+.dark_background {
+    background-color: var(--dark_black);
+    width: 100%;
+  }
 /* -- */
-
+/* font weight */
+.bold {
+    font-weight: 600;
+}
+/* --- */
+a {
+    text-decoration: none;
+}
 .space {
-    margin: 2rem 0;
+    padding: 2rem 0;
 }
   .button:hover,  .triobutton:hover {
     background-color: var(--gray);
@@ -78,6 +85,9 @@ p {
     font-family: Dosis, Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
 }
+section {
+    padding: 1rem 0 3rem;
+}
 .header_titlebox { /*h2 title box */
     font-size: 1.8rem;
     font-weight: 400;
@@ -89,7 +99,8 @@ p {
     display: grid;
     grid-template-columns:repeat(3, 1fr);
     flex-direction: row;
-    gap: 1rem;
+    gap: 3rem 1rem;
+    
 }
 .productbox {
     display: flex;
@@ -97,6 +108,71 @@ p {
     height: fit-content;
     box-sizing: border-box;
     border: 5px solid transparent;
+}
+.instagram {
+    content: url(Icons/🦆\ icon\ _Instagram\ Square_.svg);
+    margin: 0;
+}
+.instagram:hover {
+    content: url(Icons/🦆\ icon\ _Instagram\ Square_hover.svg);
+}
+.facebook {
+    content: url(Icons/🦆\ icon\ _Facebook\ Square\ icon_.svg);
+    margin: 0;
+}
+.facebook:hover {
+    content: url(Icons/🦆\ icon\ _Facebook\ Square\ icon_hover.svg);
+}
+.social_media {
+    display: flex;
+    justify-content: left;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.links a {
+    font-size: 0.8rem;
+    color: var(--dark_black);
+    padding: 0.6rem 0rem;
+    width: 100%;
+}
+.links a p {
+    margin: 0.5rem;
+    width: 100%;
+}
+.links a:hover {
+    background-color: var(--gray);
+}
+/*newsletter */
+.newsletter {
+    display: flex;
+    flex-direction: column;
+}
+.newsletter legend,  .newsletter{
+    font-family: "Dosis", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    margin: 0.2rem;
+    padding: 0.3rem;
+}
+input {
+    border: none;
+    background-color: var(--gray);
+    padding: 0.2rem;
+    margin: 0.2rem;
+    border-radius: 3px;
+}
+button {
+    border: none;
+    background-color: none;
+}
+.checkbox {
+    content: url(/Icons/checkbox.svg);
+}
+.checkbox:hover {
+    content: url(Icons/checkboxhover.svg);
+}
+.checkbox:checked {
+    content: url(Icons/checkboxchecked.svg);
 }
 
 /* Header code //////////////////////////////////////////////////////////////////////*/
@@ -110,9 +186,11 @@ p {
 .header_logo {
     position: absolute;
     background: url(images/open-science-735787-removebg-preview.png), var(--creamwhite) 50% / cover no-repeat;
-    background-size: cover;
-    width: 4.816rem;
-    height: 5.1875rem;
+    background-size: contain;
+    background-repeat: no-repeat ;
+    background-position: center;
+    width: 4.8rem;
+    height: 4.8 rem;
     border-radius: 100%;
     margin-top: 1rem;
     left: 2%;
@@ -162,6 +240,60 @@ p {
  
   /* nav menu stop */
 
+/*footer code */
+footer {
+    border-top: 1px solid var(--dark_black);
+}
+.f_boxes {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+}
+.f_boxes_f {
+    flex: 1;
+}
+.f_boxes_f:nth-child(4) {
+    align-self: center;
+}
+.csm_i {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.csm_i p {
+    margin: 0;
+}
+.contact_us, .links a:nth-child(1) {
+    margin: 1rem 0;
+}
+.open_hours p, .contact_us p{
+    margin: 0.2rem;
+}
+.item {
+    display: flex;
+    justify-content:flex-start;
+}
+.ho_day_t {
+    padding-left: 0.5rem ;
+}
+.news_b {
+    display: flex;
+    margin: 1rem auto;
+    align-items:center;
+
+}
+.send_b {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+}
+.center_n {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
 /*Homepage ////////////////////////////////////*/
 
 /*Header*/
@@ -169,7 +301,10 @@ p {
     width: 100%;
     height: 100vh;
 }
-.header_text {
+#header_page {
+    height: fit-content;
+}
+.header_text_h {
     width: 44.8125rem;
     margin: 0 auto;
     display: flex;
@@ -177,6 +312,17 @@ p {
     align-items: center;
     justify-content: center;
     height: 100%;
+}
+.header_text_o {
+    margin: 0;
+    display: flex;
+    height: 100%;
+    padding: 1.4rem 0 0 10% ;
+}
+.header_text_o h1 {
+    text-align: left;
+    margin-top: 6rem;
+    text-transform: uppercase;
 }
 .headerline {
     background: var(--blue-playful, #3498DB);
@@ -309,6 +455,10 @@ body h1 {
 }
 
 /* Homepage explore sextion */
+.h_s_explore {
+    background-color: white;
+    padding: 2% 0 0 0;
+}
 .explore_box {
     position: relative;
     width: 100%;
@@ -323,8 +473,13 @@ body h1 {
     left: 14px;
     padding: 1rem 2rem;
     font-family: "Epilogue", Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.5rem;
+}
+.explore_box:hover .explore_text {
+    background-color: var(--blue_darker);
+    color: white;
+    font-weight: 300;
 }
 
 .explore_box .product_img img{
@@ -347,9 +502,80 @@ body h1 {
 }
 .explore_box:hover .black_square {
     transform: translate(3%, 3%);
+    background-color: var(--blue_darker);
+}
+
+/* homepage exhibiton spaces */
+.h_s_exhibition_s {
+    padding-top: 1rem;
+    
+}
+
+/* Events and exhibits page /////////////////////////////////////////////////////////////////*/
+
+.remarea {
+    height: 2rem;
+    width: 100%;
+    position: relative;
+    background-color: var(--green_logo_color);
+}
+.newsbox, .exhibitbox {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    z-index: 1;
+}
+.newsbox .title {
+    border-bottom: 5px solid var(--green_logo_color);
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+.exhibitbox .title {
+    position: absolute;
+    background-color: white;
+    padding: 0.6rem 1rem;
+    top: -2.3rem;
+    left: 1rem;
+    font-size: 1.2rem;
+}
+.newsbox p, .exhibitbox p {
+    margin: 0.5rem 1rem 1rem;
+}
+.newsbox_img {
+    position: relative;
+    margin-top: auto;
+    padding-top: 1rem;
+}
+.event_date {
+    margin: 0;
+    position: absolute;
+    padding: 0.7rem 1rem;
+    font-size: 1.1rem;
+    top: -1rem;
+    right: 0;
+    z-index: 99 ;
+}
+.celso {        
+    width: 100vw;
+    height: 40vh;
+    background: linear-gradient(180deg, #222525 0%, rgba(34, 37, 37, 0.00) 50.20%, #222525 95.17%), url(images/celso-405219.jpg), lightgray 50% / cover no-repeat;
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+    ;
 }
 
 
+@media (min-width: 2000px) {
+    .header_titlebox {
+        padding-left:11vw ;
+    }
+}
 
 @media (max-width:940px) {
     /* hamburger nav menu  start*/
