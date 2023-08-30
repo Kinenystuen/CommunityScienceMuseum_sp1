@@ -122,7 +122,7 @@ a {
 .space {
     padding: 2rem 0;
 }
-  .button:hover,  .triobutton:hover {
+.button:hover,  .triobutton:hover {
     background-color: var(--gray);
     color: var(--black);
   }
@@ -505,7 +505,7 @@ body h1 {
   /* homepage news section */
 
 .product_img {
-    height: 20vh;
+    height: 40vh;
     overflow: hidden;
     }
 .product_img img {
@@ -743,9 +743,28 @@ body h1 {
     width: 20rem;
 }
 
+/* About us page ////////////////////////////////////////////////////////*/
+
+.about_us_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
 @media (min-width: 2000px) {
     .header_titlebox {
-        padding-left:11vw ;
+        padding-left:11vw;
+    }
+}
+@media (min-width: 1600px) {
+    .about_us_flex {
+        display: flex;
+        justify-content: center;
+    }
+    .about_us_flex1{
+        flex: 1;
     }
 }
 
