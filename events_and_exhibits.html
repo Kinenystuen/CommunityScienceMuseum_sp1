@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Community Science Museum - Events and Exhibition</title>
     <link rel="stylesheet" href="global.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header class="sticky_header">
-        <div class="header_logo"></div>
-            <div class="floating_nav">   
-                <input type="checkbox" name="menu_checkbox" id="menu_checkbox">
-                <label for="menu_checkbox" class="hamburger_icon" aria-label="Navigation menu"></label>
-                <nav class="nav_right">
-                    <ul>
-                        <li><a href="/index.html">Home</a></li>
-                        <li><a href="/events_and_exhibits.html" class="active_page">Events and Exhibits</a></li>
-                        <li><a href="/information.html">Information</a></li>
-                        <li><a href="/visit_us.html">Visit us</a></li>
-                        <li><a href="/about_us.html">About us</a></li>
-                        <li><a href="/contact_us.html">Contact us</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div> 
+        <a href="/index.html" class="header_logo"></a>
+        <div class="floating_nav">
+            <input type="checkbox" name="menu_checkbox" id="menu_checkbox">
+            <label for="menu_checkbox" class="hamburger_icon" aria-label="Navigation menu"></label>
+            <nav class="nav_right">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/events_and_exhibits.html" class="active_page">Events and Exhibits</a></li>
+                    <li><a href="/information.html">Information</a></li>
+                    <li><a href="/visit_us.html">Visit us</a></li>
+                    <li><a href="/about_us.html">About us</a></li>
+                    <li><a href="/contact_us.html">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main class="dark_background">
         <section class="header_image" id="header_page">
@@ -38,101 +41,135 @@
                 <h1>Events and Exhibits</h1>
             </div>
         </section>
-        <section class="h_s_news section_padding" id="h_s_news">
+        <section class="h_s_news section_padding" id="news_section">
             <h2 class="header_titlebox b_green">News</h2>
             <div class="grid3fit  content_wrap">
-                <div class="newsbox">
+                <div class="newsbox" id="Professor_of_aeronautics">
                     <p class="title">Visiting Professor of Aeronautics</p>
-                    <p>It is our pleasure to announce that Prof Sheila Widnall from the Massachusetts Institute of Technology will be delivering 3 lectures on the development of and where the future lies in this exciting ‘space’.</p>
+                    <p>It is our pleasure to announce that Prof Sheila Widnall from the Massachusetts Institute of
+                        Technology will be delivering 3 lectures on the development of and where the future lies in this
+                        exciting ‘space’.</p>
                     <div class="newsbox_img">
                         <p class=" b_green text_white event_date">22.09.23</p>
-                    <div class="product_img">
-                        <img src="images/plane.png" alt="Visiting Professor of Aeronautics image"></div>
+                        <div class="product_img">
+                            <img src="images/plane.png" alt="Visiting Professor of Aeronautics image">
+                        </div>
                     </div>
                 </div>
-                <div class="newsbox">
+                <div class="newsbox" id="night_in_the_museum">
                     <p class="title">Night in the Museum</p>
-                    <p>Get your family together for an exciting night in the museum as you sleep over beside dinosaurs and science displays. Bring your own sleeping bag and get ready to rough it as we go exploring the wonders of science.</p>
+                    <p>Get your family together for an exciting night in the museum as you sleep over beside dinosaurs
+                        and science displays. Bring your own sleeping bag and get ready to rough it as we go exploring
+                        the wonders of science.</p>
                     <div class="newsbox_img">
                         <p class=" b_green text_white event_date">04.10.23</p>
-                        <div class="product_img"><img src="images/roberto-nickson-396152.jpg" alt="Night in the Museum image"></div>
+                        <div class="product_img"><img src="images/roberto-nickson-396152.jpg"
+                                alt="Night in the Museum image"></div>
                     </div>
                 </div>
-                <div class="newsbox">
+                <div class="newsbox" id="Energetica_exhibition_on_loan">
                     <p class="title">Energetica Exhibition on Loan</p>
-                    <p>On loan from the NEMO Science Museum in Amsterdam, the Energetica exhibition is coming to the Community Science Museum. It’s a series of installations that allow visitors to experience the power of the elements as we harness them. From solar energy powering lighting, to ‘Wind Island’ that shows how turbines are able to use and control wind to create power.</p>
+                    <p>On loan from the NEMO Science Museum in Amsterdam, the Energetica exhibition is coming to the
+                        Community Science Museum. It’s a series of installations that allow visitors to experience the
+                        power of the elements as we harness them. From solar energy powering lighting, to ‘Wind Island’
+                        that shows how turbines are able to use and control wind to create power.</p>
                     <div class="newsbox_img">
                         <p class=" b_green text_white event_date">30.10.23</p>
-                        <div class="product_img"><img src="images/lightenergy.png" alt="Visiting Professor of Aeronautics image"></div>
+                        <div class="product_img"><img src="images/lightenergy.png"
+                                alt="Visiting Professor of Aeronautics image"></div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="h_s_news section_padding" id="ee_exhibits">
+        <section class="h_s_news section_padding" id="exhibition_spaces">
             <h2 class="header_titlebox b_green">Exhibition Spaces</h2>
             <div class="grid3fit  content_wrap">
-                <div class="exhibitbox">
+                <div class="exhibitbox" id="cosmology">
                     <div class="remarea">
                         <h3 class="title">Cosmology</h3>
-                    </div>  
-                    <p>Explore the wonders of our cosmos. Our fantastic exhibition, ‘The Sky Above Us’, explores the night sky and what we can see and know about the universe around us. We’ll locate the various constellations and galaxies that can be seen and learn a bit about the early navigators who used the stars to travel by.</p>
-                    <p>Follow the journey of our solar exploration: from early Arab traders, to Galileo’s telescope, to the latest exploration of the planets in our solar system.</p>
+                    </div>
+                    <p>Explore the wonders of our cosmos. Our fantastic exhibition, ‘The Sky Above Us’, explores the
+                        night sky and what we can see and know about the universe around us. We’ll locate the various
+                        constellations and galaxies that can be seen and learn a bit about the early navigators who used
+                        the stars to travel by.</p>
+                    <p>Follow the journey of our solar exploration: from early Arab traders, to Galileo’s telescope, to
+                        the latest exploration of the planets in our solar system.</p>
                     <div class="newsbox_img">
-                    <div class="product_img">
-                        <img src="images/andrew-ruiz-348421.jpg" alt="Visiting Professor of Aeronautics image"></div>
+                        <div class="product_img">
+                            <img src="images/andrew-ruiz-348421.jpg" alt="The moon image">
+                        </div>
                     </div>
                 </div>
-                <div class="exhibitbox">
+                <div class="exhibitbox" id="evolution">
                     <div class="remarea">
                         <h3 class="title">Evolution</h3>
-                    </div>  
-                    <p>For centuries, philosophers and scientists have wrestled with the question of our origins. Where do we come from and how did we get here? Since Darwin proposed his theory of evolution we have had a framework for exploring and understanding our place in this world.</p>
-                    <p>Discover the origins of life on this planet and how the species we know today have evolved our time. You can also take some time to meet a few of the creatures who didn’t survive, including our Woolly Mammoth, the Dodos, and a number of dinosaurs too.</p>
+                    </div>
+                    <p>For centuries, philosophers and scientists have wrestled with the question of our origins. Where
+                        do we come from and how did we get here? Since Darwin proposed his theory of evolution we have
+                        had a framework for exploring and understanding our place in this world.</p>
+                    <p>Discover the origins of life on this planet and how the species we know today have evolved our
+                        time. You can also take some time to meet a few of the creatures who didn’t survive, including
+                        our Woolly Mammoth, the Dodos, and a number of dinosaurs too.</p>
                     <div class="newsbox_img">
-                    <div class="product_img">
-                        <img src="images/Skjermbilde 2023-08-23 203024.png" alt="Visiting Professor of Aeronautics image"></div>
+                        <div class="product_img">
+                            <img src="images/Skjermbilde 2023-08-23 203024.png" alt="Image of people">
+                        </div>
                     </div>
                 </div>
-                <div class="exhibitbox">
+                <div class="exhibitbox" id="biology_and_medicine">
                     <div class="remarea">
                         <h3 class="title">Biology and Medicine</h3>
-                    </div>  
-                    <p>From micro-organisms to the human body, major breakthroughs in biology are offering us unique insights into the great wonders of the tiny world.</p>
-                    <p>For many people their life expectancy is much longer and their quality of life much improved, thanks to the growth of our understanding of medicine. Over a series of exhibits we explore the history of medicine and take a look at some major breakthroughs including the discovery of penicillin and the first heart transplant.</p>
-                    <p>Many of our great medicinal discoveries have come not only from the lab, but also from observing animals in the wild. Often our fellow creatures have beat us to it.</p>
+                    </div>
+                    <p>From micro-organisms to the human body, major breakthroughs in biology are offering us unique
+                        insights into the great wonders of the tiny world.</p>
+                    <p>For many people their life expectancy is much longer and their quality of life much improved,
+                        thanks to the growth of our understanding of medicine. Over a series of exhibits we explore the
+                        history of medicine and take a look at some major breakthroughs including the discovery of
+                        penicillin and the first heart transplant.</p>
+                    <p>Many of our great medicinal discoveries have come not only from the lab, but also from observing
+                        animals in the wild. Often our fellow creatures have beat us to it.</p>
                     <div class="newsbox_img">
-                    <div class="product_img">
-                        <img src="images/heart-2607178_1920.jpg" alt="Visiting Professor of Aeronautics image"></div>
+                        <div class="product_img">
+                            <img src="images/heart-2607178_1920.jpg" alt="Image of a heart imitation">
+                        </div>
                     </div>
                 </div>
-                <div class="exhibitbox">
+                <div class="exhibitbox" id="robotics_and_AI">
                     <div class="remarea">
                         <h3 class="title">Robotics and AI</h3>
-                    </div>  
-                    <p>Explore the wonders of our cosmos. Our fantastic exhibition, ‘The Sky Above Us’, explores the night sky and what we can see and know about the universe around us. We’ll locate the various constellations and galaxies that can be seen and learn a bit about the early navigators who used the stars to travel by.</p>
-                    <p>Follow the journey of our solar exploration: from early Arab traders, to Galileo’s telescope, to the latest exploration of the planets in our solar system.</p>
+                    </div>
+                    <p>Explore the wonders of our cosmos. Our fantastic exhibition, ‘The Sky Above Us’, explores the
+                        night sky and what we can see and know about the universe around us. We’ll locate the various
+                        constellations and galaxies that can be seen and learn a bit about the early navigators who used
+                        the stars to travel by.</p>
+                    <p>Follow the journey of our solar exploration: from early Arab traders, to Galileo’s telescope, to
+                        the latest exploration of the planets in our solar system.</p>
                     <div class="newsbox_img">
-                    <div class="product_img">
-                        <img src="images/Skjermbilde 2023-08-23 203232.png" alt="Visiting Professor of Aeronautics image"></div>
+                        <div class="product_img">
+                            <img src="images/Skjermbilde 2023-08-23 203232.png" alt="Image of a robot">
+                        </div>
                     </div>
                 </div>
-                <div class="exhibitbox">
+                <div class="exhibitbox" id="ecology">
                     <div class="remarea">
-                        <h3 class="title">Ecology   </h3>
-                    </div>  
-                    <p>As we learn more and more of the impact humans are having on the planet, the more important it becomes that scientists explore how to create a sustainable future not just for humans but for the whole planet.</p>
+                        <h3 class="title">Ecology </h3>
+                    </div>
+                    <p>As we learn more and more of the impact humans are having on the planet, the more important it
+                        becomes that scientists explore how to create a sustainable future not just for humans but for
+                        the whole planet.</p>
                     <div class="newsbox_img">
-                    <div class="product_img">
-                        <img src="images/Skjermbilde 2023-08-23 203354.png" alt="Visiting Professor of Aeronautics image"></div>
+                        <div class="product_img">
+                            <img src="images/Skjermbilde 2023-08-23 203354.png" alt="Image of bottom vegetation">
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="images celso"></div>
-        </section>  
+        </section>
     </main>
     <footer>
-        <div  class="content_wrap">
-            <div class="f_boxes">
+        <div class="content_wrap">
+            <div class="grid3fit">
                 <div class="f_boxes_f">
                     <div class="csm_i">
                         <p>Community Science Museum</p>
@@ -140,49 +177,94 @@
                     </div>
                     <div class="open_hours">
                         <p class="bold">Opening hours:</p>
-                        <div class="item"><p class="item_l">Monday:</p><p class="ho_day_t">Closed</p></div>
-                        <div class="item"><p class="item_l">Tuesday:</p><p class="ho_day_t">10:00 – 16:00</p></div>
-                        <div class="item"><p class="item_l">Wednesday:</p><p class="ho_day_t">10:00 – 16:00</p></div>
-                        <div class="item"><p class="item_l">Thursday:</p><p class="ho_day_t">10:00 – 16:00</p></div>
-                        <div class="item"><p class="item_l">Friday:</p><p class="ho_day_t">10:00 – 19:00</p></div>
-                        <div class="item"><p class="item_l">Saturday:</p><p class="ho_day_t">9:00 – 16:00</p></div>
-                        <div class="item"><p class="item_l">Sunday:</p><p class="ho_day_t">9:00 – 13:00</p></div>  
-                    </div>  
+                        <div class="item">
+                            <p class="item_l">Monday:</p>
+                            <p class="ho_day_t">Closed</p>
+                        </div>
+                        <div class="item">
+                            <p class="item_l">Tuesday:</p>
+                            <p class="ho_day_t">10:00 – 16:00</p>
+                        </div>
+                        <div class="item">
+                            <p class="item_l">Wednesday:</p>
+                            <p class="ho_day_t">10:00 – 16:00</p>
+                        </div>
+                        <div class="item">
+                            <p class="item_l">Thursday:</p>
+                            <p class="ho_day_t">10:00 – 16:00</p>
+                        </div>
+                        <div class="item">
+                            <p class="item_l">Friday:</p>
+                            <p class="ho_day_t">10:00 – 19:00</p>
+                        </div>
+                        <div class="item">
+                            <p class="item_l">Saturday:</p>
+                            <p class="ho_day_t">9:00 – 16:00</p>
+                        </div>
+                        <div class="item">
+                            <p class="item_l">Sunday:</p>
+                            <p class="ho_day_t">9:00 – 13:00</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="f_boxes_f">
-                    <div class="contact_us"><p class="bold">Contact us:</p>
+                    <div class="contact_us">
+                        <p class="bold">Contact us:</p>
                         <p class="item">Phone: +47 38373635</p>
                         <p class="item">E-mail: CSMuseum@museum.com</p>
                     </div>
                     <div class="social_media">
-                        <a href="/"><figure class="instagram image"></figure></a>
-                        <a href="/"><figure class="facebook image"></figure></a>
+                        <a href="/">
+                            <figure class="instagram image"></figure>
+                        </a>
+                        <a href="/">
+                            <figure class="facebook image"></figure>
+                        </a>
                     </div>
                 </div>
                 <div class="f_boxes_f links links_f">
-                    <a href=""><p class="item">Events and Exhibits</p></a>
-                    <a href=""><p class="item">Get involed</p></a>
-                    <a href=""><p class="item">Explore</p></a>
-                    <a href=""><p class="item">Prices</p></a>
-                    <a href=""><p class="item">Accessibility</p></a>
-                    <a href=""><p class="item">Shop</p></a>
-                    <a href=""><p class="item">Food and drink</p></a>   
+                    <a href="">
+                        <p class="item">Events and Exhibits</p>
+                    </a>
+                    <a href="">
+                        <p class="item">Get involed</p>
+                    </a>
+                    <a href="">
+                        <p class="item">Explore</p>
+                    </a>
+                    <a href="">
+                        <p class="item">Prices</p>
+                    </a>
+                    <a href="">
+                        <p class="item">Accessibility</p>
+                    </a>
+                    <a href="">
+                        <p class="item">Shop</p>
+                    </a>
+                    <a href="">
+                        <p class="item">Food and drink</p>
+                    </a>
                 </div>
                 <div class="f_boxes_f">
                     <form action="post" class="center_n">
                         <div class="newsletter">
                             <legend>Subscribe to our newsletter</legend>
                             <label for="name"><input type="text" id="name" name="name" placeholder="Name"></label>
-                            <label for="email"><input type="email" id="email" name="email" placeholder="Email" required></label>
+                            <label for="email"><input type="email" id="email" name="email" placeholder="Email"
+                                    required></label>
                             <div>
-                                <label for="checkbox" class="l_c"><input class="checkbox" type="checkbox" id="Accept_p_s" name="Accept_p_s">Accept <a href="/">privacy statement</a></label>
+                                <label for="checkbox" class="l_c"><input class="checkbox" type="checkbox"
+                                        id="Accept_p_s" name="Accept_p_s">Accept <a href="/">privacy
+                                        statement</a></label>
                             </div>
                         </div>
-                        <button class="news_b"><input type="submit" value="Subscribe" class="button b_green send_b" ></button>
+                        <button class="news_b"><input type="submit" value="Subscribe"
+                                class="button b_green send_b"></button>
                     </form>
                 </div>
             </div>
         </div>
     </footer>
 </body>
+
 </html>

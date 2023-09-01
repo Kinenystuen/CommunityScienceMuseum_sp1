@@ -40,6 +40,7 @@ body {
     text-align: center;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .padding-top2rem {
     padding-top: 2rem;
@@ -108,7 +109,7 @@ body {
 .padding1rem {
     padding: 1rem;
 }
-/* width */
+/* width / height */
 .w_fit_content {
     width: fit-content;
 }
@@ -144,7 +145,7 @@ p {
     padding: 0.5rem 1.6rem 0.6rem 10.4% ;
     margin: 2rem 0;
 }
-.flex {
+.flex_spacebetween { /* fix - is it used? */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -162,6 +163,13 @@ p {
 .gridefit {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(600px,1fr));
+    gap: 1rem;
+}
+.gridcenter {
+    justify-content: center;
+    align-items: center;
+}
+.gap1rem {
     gap: 1rem;
 }
 .productbox {
@@ -217,12 +225,20 @@ p {
     margin: 0.2rem;
     padding: 0.3rem;
 }
-input {
+input, textarea {
     border: none;
     background-color: var(--gray);
     padding: 0.4rem;
-    margin: 0.2rem;
+    margin: 0.2rem 0;
     border-radius: 3px;
+}
+input:focus , textarea:focus {
+    outline: 1px solid var(--dark_black);
+}
+label {
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding: 0.2rem;
 }
 button {
     border: none;
@@ -230,6 +246,7 @@ button {
 }
 .checkbox {
     content: url(/Icons/checkbox.svg);
+    margin-right: 0.2rem;
 }
 .checkbox:hover {
     content: url(Icons/checkboxhover.svg);
@@ -376,7 +393,7 @@ footer {
     padding-bottom: 3rem;
 }
 .header_text_h {
-    width: 44.8125rem;
+    width: fit-content;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -397,7 +414,7 @@ footer {
 }
 .headerline {
     background: var(--blue-playful, #3498DB);
-    width: 46.0625rem;
+    width: 100%;
     height: 0.3125rem;
 }
 
@@ -467,6 +484,7 @@ body h1 {
     height: 1rem;
     margin: 0 2%;
     box-sizing: content-box;
+    align-self: center;
   }
 
   /* homepage 2 dark area //*/
@@ -664,12 +682,12 @@ body h1 {
     grid-column: 3;
     grid-row: 1/3;
 }
-.info_img {
+.info_img, .contact_img { /* fix?*/
     flex: 2;
     height: 50vh;
     overflow: hidden;
     }
-.info_img img {
+.info_img img, .contact_img img { /* fix?*/
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -713,7 +731,8 @@ body h1 {
 }
 .visit_g_four_spes {
     font-size: 1.6rem;
-    padding: 4rem;
+    width: 100%;
+    height: 100%;
 }
 
 .map_icon::before {
@@ -742,6 +761,12 @@ body h1 {
 .visitus_page .explore_box {
     width: 20rem;
 }
+.visitus_page:hover .explore_text {
+    background-color: var(--gray);
+    color: var(--dark_black);
+    font-weight: 400;
+    cursor:default;
+}
 
 /* About us page ////////////////////////////////////////////////////////*/
 
@@ -759,16 +784,33 @@ body h1 {
     }
 }
 @media (min-width: 1600px) {
-    .about_us_flex {
+    .flexcenter {
         display: flex;
         justify-content: center;
     }
-    .about_us_flex1{
+    .flexcenter1{
         flex: 1;
+    }
+}
+@media (max-width:1150px) {
+    .triobuttons {
+        flex-direction: column;
+        gap: 1rem;
+        width: fit-content;
+    }
+    .triobutton {
+        width: 80%;
     }
 }
 
 @media (max-width:940px) {
+    .header_logo {
+        width: 4rem;
+        height: 4rem;
+        top: 0.5rem;
+        position: absolute;
+        margin-top: 1rem;
+    }
     /* hamburger nav menu  start*/
     .nav_right {
         display: none;
@@ -828,18 +870,80 @@ body h1 {
     }
     /* hamburger meny stop */
 
-    .header_logo {
-        position: absolute;
-        margin-top: 1rem;
+    /* visit us page grid */
+    .visit_g_one, .g_two { /*opening hours, accessibility*/
+        grid-column: 2/3;
+        grid-row: 1;
     }
+    .visit_g_two, .g_three  { /*picture, prices*/
+        grid-column: 1;
+        grid-row: 2/3;
+    }
+    .visit_g_three, .g_one { /*prices , opening hours */
+        grid-column: 1;
+        grid-row: 1/2;
+    }
+    .visit_g_four, .g_four{ /*button, events and exhibits */
+        grid-column: 2;
+        grid-row: 2;
+    }
+}
 
-
-    @media (max-width:760px) {
-        .flex {
-            flex-direction: column;
-        }
-        .gridefit {
-            display: flex;
-            flex-direction: column;
-        }
+@media (max-width:760px) {
+    .flex_spacebetween {
+        flex-direction: column;
+    }
+    .gridefit {
+        display: flex;
+        flex-direction: column;
+    }
+    .header_text_h h1, .header_text_o h1 {
+        font-size: 3rem;
+    }
+    .header_titlebox {
+        font-size: 1.5rem;
+    }
+    .text_img_group {
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+}
+@media (max-width:670px) {
+    /* home page */
+    .h_section2 {
+        flex-direction: column;
+    }
+    .child_painting, .human_body {
+        flex: auto;
+        width: 100%;
+        height: 16rem;
+    }
+    /* visit us page and information grid */
+    .visit_g_one,.visit_g_two, .visit_g_three, .visit_g_four, .g_one, .g_two, .g_three, .g_four { /*opening hours*/
+        grid-column:auto;
+        grid-row: auto;
+    }
+    .visit_g_two { /*picture*/
+        grid-column: 1;
+        grid-row: 2/3;
+    }
+    .visit_g_three { /*prices */
+        grid-column: 1;
+        grid-row: 1/2;
+    }
+    .visit_g_four { /*button */
+        font-size: 0.5rem;
+    }
+    .visit_g_four_spes {
+        font-size: 1.3rem;
+    }
+}
+@media (max-width:460px) {
+    .header_text_h h1, .header_text_o h1 {
+        font-size: 2rem;
+    }
+    .header_titlebox {
+        font-size: 1.3rem;
+    }
 }
