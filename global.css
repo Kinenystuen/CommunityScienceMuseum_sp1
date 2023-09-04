@@ -5,6 +5,7 @@
     --green_logo_color: #3FA752;
     --black: #000000;
     --gray: #ECEBEA;
+    --white: #ffffff;
 }
 * {
     box-sizing: border-box;
@@ -54,7 +55,7 @@ body {
   }
 .b_green {
     background-color: var(--green_logo_color);
-    color: var(--creamwhite);
+    color: var(--white);
   }
 .gray {
     background-color: var(--gray);
@@ -74,7 +75,7 @@ body {
     width: 100%;
 }
 .white_background {
-    background-color: white;
+    background-color: var(--white);
     width: 100%;
 }
 .green_underline {
@@ -145,10 +146,11 @@ p {
     padding: 0.5rem 1.6rem 0.6rem 10.4% ;
     margin: 2rem 0;
 }
-.flex_spacebetween { /* fix - is it used? */
+.flex_spacebetween {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 95%;
 }
 .flexwrap { /*used for explore section in visit us page */
     display: flex;
@@ -156,7 +158,12 @@ p {
 }
 .grid3fit {
     display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns:repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem 1rem;
+}
+.gridfit250 {
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
     gap: 3rem 1rem;
 }
 .grid3fill {
@@ -396,7 +403,7 @@ footer {
     padding: 0;
     padding-bottom: 3rem;
 }
-.header_text_h {
+.header_text_h { /*home page*/
     width: fit-content;
     margin: 0 auto;
     display: flex;
@@ -405,13 +412,16 @@ footer {
     justify-content: center;
     height: 100%;
 }
-.header_text_o {
+.header_text_h h2 { /*home page*/
+    font-weight: 400;
+}
+.header_text_o { /*other pages */
     margin: 0;
     display: flex;
     height: 100%;
     padding: 1.4rem 0 0 10% ;
 }
-.header_text_o h1 {
+.header_text_o h1 { /*other pages */
     text-align: left;
     margin-top: 6rem;
     text-transform: uppercase;
@@ -551,7 +561,7 @@ body h1 {
 
 /* Homepage explore sextion */
 .h_s_explore {
-    background-color: white;
+    background-color: var(--white);
     padding: 2% 0 0 0;
 }
 .explore_box {
@@ -574,7 +584,7 @@ body h1 {
 }
 .explore_box:hover .explore_text {
     background-color: var(--blue_darker);
-    color: white;
+    color: var(--white);
     font-weight: 300;
 }
 
@@ -616,7 +626,7 @@ body h1 {
     background-color: var(--green_logo_color);
 }
 .newsbox, .exhibitbox {
-    background-color: white;
+    background-color: var(--white);
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -633,7 +643,7 @@ body h1 {
 }
 .exhibitbox .title {
     position: absolute;
-    background-color: white;
+    background-color: var(--white);
     padding: 0.6rem 1rem;
     top: -2.3rem;
     left: 1rem;
@@ -969,7 +979,7 @@ body h1 {
         font-size: 1.3rem;
     }
     
-    .triangle {
+    .triangle { /*for triobutton section */
         display: none;
     }
 }
