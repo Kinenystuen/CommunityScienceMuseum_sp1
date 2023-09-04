@@ -63,6 +63,9 @@ body {
 .text_black {
     color: var(--dark_black);
 }
+.text_white {
+    color: var(--white);
+}
 .dark_background {
     background-color: var(--dark_black);
     width: 100%;
@@ -115,6 +118,9 @@ body {
     width: 100%;
 }
 /* --- */
+.hidden_element {
+    display: none;
+}
 a {
     text-decoration: none;
 }
