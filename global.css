@@ -150,9 +150,13 @@ p {
     justify-content: space-between;
     align-items: center;
 }
+.flexwrap { /*used for explore section in visit us page */
+    display: flex;
+    flex-wrap: wrap;
+}
 .grid3fit {
     display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns:repeat(auto-fit, minmax(400px, 1fr));
     gap: 3rem 1rem;
 }
 .grid3fill {
@@ -554,6 +558,7 @@ body h1 {
     position: relative;
     width: 100%;
     height: 100%;
+    flex: 1;
 }
 .explore_box h3 {
     position: absolute;
@@ -581,7 +586,7 @@ body h1 {
     left: 14px;
 }
 .explore_box:hover .product_img img {
-    transform: translate(-3%, -3%);
+    transform: translate(-12px, -10px);
 }
 .black_square {
     background-color: var(--dark_black);
@@ -592,7 +597,7 @@ body h1 {
     left: -40px;
 }
 .explore_box:hover .black_square {
-    transform: translate(3%, 3%);
+    transform: translate(14px, 10px);
     background-color: var(--blue_darker);
 }
 
@@ -633,6 +638,7 @@ body h1 {
     top: -2.3rem;
     left: 1rem;
     font-size: 1.2rem;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .newsbox p, .exhibitbox p {
     margin: 0.5rem 1rem 1rem;
@@ -782,6 +788,9 @@ body h1 {
     .header_titlebox {
         padding-left:11vw;
     }
+    html { 
+        font-size: 20px; 
+    }
 }
 @media (min-width: 1600px) {
     .flexcenter {
@@ -789,8 +798,15 @@ body h1 {
         justify-content: center;
     }
     .flexcenter1{
+        flex: 2;
+    }
+    #about_us_section .about_us_text , #contact_us_section .contact_us_text {
         flex: 1;
     }
+    #about_us_section .image,  #contact_us_section .image {
+        flex: 2;
+    }
+
 }
 @media (max-width:1150px) {
     .triobuttons {
@@ -910,6 +926,12 @@ body h1 {
     }
 }
 @media (max-width:670px) {
+    /* all pages */
+    .grid3fit {
+        display: grid;
+        grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+        gap: 3rem 1rem;
+    }
     /* home page */
     .h_section2 {
         flex-direction: column;
@@ -945,5 +967,9 @@ body h1 {
     }
     .header_titlebox {
         font-size: 1.3rem;
+    }
+    
+    .triangle {
+        display: none;
     }
 }
