@@ -663,9 +663,11 @@ body h1 {
     position: absolute;
     padding: 0.7rem 1rem;
     font-size: 1.1rem;
-    top: -1rem;
-    right: 0;
+    top: -0.4rem;
+    right: 2%;
     z-index: 99 ;
+    font-weight: 600;
+    color: var(--white);
 }
 .celso {        
     width: 100%;
