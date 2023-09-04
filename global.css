@@ -546,7 +546,7 @@ body h1 {
     object-fit: cover;
     z-index: 2;
 }
-.productbox p {
+.productbox h3, .productbox p {
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 600;
