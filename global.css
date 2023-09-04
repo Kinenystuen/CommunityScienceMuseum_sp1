@@ -220,12 +220,13 @@ p {
 .links_f a:nth-child(1) {
     padding: 0.6rem 0rem 0.4rem 0.5rem;
 }
-.links a p {
+.links a p, .links a h4 {
     margin: 0.5rem;
     padding: 0.4rem 0rem 0.4rem 0.5rem;
     width: 80%;
+    font-weight: 400;
 }
-.links a p:hover {
+.links a p:hover, .links a h4:hover {
     background-color: var(--gray);
 }
 /*newsletter */
