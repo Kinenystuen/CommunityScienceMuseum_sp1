@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Community Science Museum - About us</title>
-    <meta name="describtion" content="Learn about our museum's rich history and our commitment to bringing science to life through over 1000 interactive exhibits. Join us on a journey of discovery.">
+    <meta name="describtion"
+        content="Learn about our museum's rich history and our commitment to bringing science to life through over 1000 interactive exhibits. Join us on a journey of discovery.">
     <link rel="icon" href="/images/open-science-735787-removebg-preview.png" type="image/x-icon">
     <link rel="stylesheet" href="global.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -82,48 +83,54 @@
     </main>
     <footer>
         <div class="gridfit250 content_wrap">
-            <div class="f_boxes_f">
+            <div class="flexone">
                 <div class="csm_i">
                     <p>Community Science Museum</p>
                     <p>Verket 1 2580 Folldal</p>
                 </div>
-                <div class="open_hours">
+                <ul class="zeropadding open_hours">
                     <p class="bold">Opening hours:</p>
-                    <div class="item">
+                    <li class="item">
                         <p class="item_l">Monday:</p>
                         <p class="ho_day_t">Closed</p>
-                    </div>
-                    <div class="item">
+                    </li>
+                    <li class="item">
                         <p class="item_l">Tuesday:</p>
                         <p class="ho_day_t">10:00 – 16:00</p>
-                    </div>
-                    <div class="item">
+                    </li>
+                    <li class="item">
                         <p class="item_l">Wednesday:</p>
                         <p class="ho_day_t">10:00 – 16:00</p>
-                    </div>
-                    <div class="item">
+                    </li>
+                    <li class="item">
                         <p class="item_l">Thursday:</p>
                         <p class="ho_day_t">10:00 – 16:00</p>
-                    </div>
-                    <div class="item">
+                    </li>
+                    <li class="item">
                         <p class="item_l">Friday:</p>
                         <p class="ho_day_t">10:00 – 19:00</p>
-                    </div>
-                    <div class="item">
+                    </li>
+                    <li class="item">
                         <p class="item_l">Saturday:</p>
                         <p class="ho_day_t">9:00 – 16:00</p>
-                    </div>
-                    <div class="item">
+                    </li>
+                    <li class="item">
                         <p class="item_l">Sunday:</p>
                         <p class="ho_day_t">9:00 – 13:00</p>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
-            <div class="f_boxes_f">
+            <div class="flexone">
                 <div class="contact_us">
                     <p class="bold">Contact us:</p>
-                    <p class="item">Phone: +47 38373635</p>
-                    <p class="item">E-mail: CSMuseum@museum.com</p>
+                    <div class="item">
+                        <p class="item">Phone:</p>
+                        <p class="item"> +47 38373635</p>
+                    </div>
+                    <div class="item">
+                        <p class="i tem">E-mail:</p>
+                        <p class="item">CSMuseum@museum.com</p>
+                    </div>
                 </div>
                 <div class="social_media">
                     <a href="/">
@@ -134,27 +141,27 @@
                     </a>
                 </div>
             </div>
-            <div class="f_boxes_f links links_f">
-                <a href="/visit_us.html#get_involved">
-                    <p class="item">Get involed</p>
-                </a>
-                <a href="/visit_us.html#explore_section">
-                    <p class="item">Explore</p>
-                </a>
-                <a href="/information.html#prices_i_p">
-                    <p class="item">Prices</p>
-                </a>
-                <a href="/information.html#accessibility">
-                    <p class="item">Accessibility</p>
-                </a>
-                <a href="/information.html#shop">
-                    <p class="item">Shop</p>
-                </a>
-                <a href="/information.html#food_and_drink">
-                    <p class="item">Food and drink</p>
-                </a>
-            </div>
-            <div class="f_boxes_f">
+            <nav class="flexone links links_f">
+                <li><a href="/visit_us.html#get_involved">
+                        <p class="item">Get involed</p>
+                    </a></li>
+                <li><a href="/visit_us.html#explore_section">
+                        <p class="item">Explore</p>
+                    </a></li>
+                <li><a href="/information.html#prices_i_p">
+                        <p class="item">Prices</p>
+                    </a></li>
+                <li><a href="/information.html#accessibility">
+                        <p class="item">Accessibility</p>
+                    </a></li>
+                <li><a href="/information.html#shop">
+                        <p class="item">Shop</p>
+                    </a></li>
+                <li><a href="/information.html#food_and_drink">
+                        <p class="item">Food and drink</p>
+                    </a></li>
+            </nav>
+            <div class="flexone">
                 <form action="post" class="center_n newsletter">
                     <p>Subscribe to our newsletter</p>
                     <label for="name" style="display: none;">Name</label>
@@ -166,7 +173,7 @@
                                 name="Accept_p_s">Accept <a href="/">privacy
                                 statement</a></label>
                     </div>
-                    <input type="submit" name="submit" value="Subscribe" class="button b_green send_b news_b">
+                    <button type="submit" name="submit" class="button b_green send_b news_b">Subscribe</button>
                 </form>
             </div>
         </div>

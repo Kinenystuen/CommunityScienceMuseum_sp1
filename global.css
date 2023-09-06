@@ -110,6 +110,9 @@ body {
 .padding1rem {
     padding: 1rem;
 }
+.margin1rem {
+    margin: 1rem;
+}
 /* width / height */
 .w_fit_content {
     width: fit-content;
@@ -118,6 +121,9 @@ body {
     width: 100%;
 }
 /* --- */
+.zeropadding {
+    padding: 0px;
+}
 .hidden_element {
     display: none;
 }
@@ -193,6 +199,14 @@ p {
     height: fit-content;
     border: 5px solid transparent;
 }
+
+nav {
+    list-style: none;
+    margin: 0;        /* Remove default margin */
+    padding: 0;       /* Remove default padding */
+    text-align: left;
+}
+
 .instagram {
     content: url(Icons/🦆\ icon\ _Instagram\ Square_.svg);
     margin: 0;
@@ -218,8 +232,8 @@ p {
     font-size: 0.8rem;
     color: var(--dark_black);
 }
-.links_f a:nth-child(1) {
-    padding: 0.6rem 0rem 0.4rem 0.5rem;
+.links_f li:nth-child(1) {
+    padding: 0.6rem 0rem 0rem 0rem;
 }
 .links a p, .links a h4 {
     margin: 0.5rem;
@@ -273,7 +287,7 @@ button {
 
 /* Header code //////////////////////////////////////////////////////////////////////*/
 
-/*///  nav /// */
+/*///  header nav /// */
 .sticky_header {
     position: sticky;
     top: -1rem;
@@ -335,7 +349,7 @@ button {
     display: none;
   }
  
-  /* nav menu stop */
+  /* header nav menu stop */
 
 /*footer code */
 footer {
@@ -347,10 +361,10 @@ footer {
     gap: 1rem;
     margin: 1rem;
 }
-.f_boxes_f {
+.flexone {
     flex: 1;
 }
-.f_boxes_f:nth-child(4) {
+.flexone:nth-child(4) {
     align-self: center;
 }
 .csm_i {
@@ -708,6 +722,7 @@ body h1 {
 .g_four {
     grid-column: 3;
     grid-row: 1/3;
+    flex: 1;
 }
 .info_img, .contact_img { /* fix?*/
     flex: 2;
@@ -733,7 +748,9 @@ body h1 {
     width: 90%;
     margin: auto;
 }
-
+.opening_hours ul {
+    padding: 1rem;
+}
 
 /* Visit us page ////////////////////////////////////////////////////////*/
 
@@ -843,6 +860,23 @@ body h1 {
     .triobutton {
         width: 80%;
     }
+    /* visit us and information page grid */
+    .visit_g_one, .g_two { /*opening hours, accessibility*/
+        grid-column: 2/3;
+        grid-row: 1;
+    }
+    .visit_g_two, .g_three  { /*picture, prices*/
+        grid-column: 1;
+        grid-row: 2/3;
+    }
+    .visit_g_three, .g_one { /*prices , opening hours */
+        grid-column: 1;
+        grid-row: 1/2;
+    }
+    .visit_g_four, .g_four{ /*button, events and exhibits */
+        grid-column: 2;
+        grid-row: 2;
+    }
 }
 
 @media (max-width:940px) {
@@ -853,7 +887,7 @@ body h1 {
         position: absolute;
         margin-top: 1rem;
     }
-    /* hamburger nav menu  start*/
+    /* hamburger headernav menu  start*/
     .nav_right {
         display: none;
     }
@@ -911,24 +945,6 @@ body h1 {
         
     }
     /* hamburger meny stop */
-
-    /* visit us page grid */
-    .visit_g_one, .g_two { /*opening hours, accessibility*/
-        grid-column: 2/3;
-        grid-row: 1;
-    }
-    .visit_g_two, .g_three  { /*picture, prices*/
-        grid-column: 1;
-        grid-row: 2/3;
-    }
-    .visit_g_three, .g_one { /*prices , opening hours */
-        grid-column: 1;
-        grid-row: 1/2;
-    }
-    .visit_g_four, .g_four{ /*button, events and exhibits */
-        grid-column: 2;
-        grid-row: 2;
-    }
 }
 
 @media (max-width:760px) {
