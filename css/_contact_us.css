@@ -7,3 +7,9 @@
 .message_input {
     width: 100%;
 }
+.message_area_sent h3{
+    font-size: 1rem;
+}
+.message_area_sent button {
+    margin: 0;
+}

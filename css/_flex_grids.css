@@ -16,6 +16,12 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+    .flexcenter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
 /* Grids */
     .grid3fit {

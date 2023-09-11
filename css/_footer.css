@@ -42,10 +42,11 @@ footer {
 .ho_day_t {
     padding-left: 0.5rem ;
 }
-.news_b {
+#news_b {
     display: flex;
     margin: 1rem auto;
     align-items:center;
+    padding: 1rem;
 
 }
 .send_b {

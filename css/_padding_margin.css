@@ -25,6 +25,9 @@
     .margin1rem {
         margin: 1rem;
     }   
+    .marginauto {
+        margin: auto;
+    }
 
 /* Gap */
     .gap1rem {
