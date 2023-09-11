@@ -43,8 +43,8 @@
 @import url("_visit_us.css"); /*       16. Visit us page                  */
 @import url("_about_us.css"); /*       17. About us page                  */
 @import url("_contact_us.css"); /*     18. Contact us page                */
+@import url("_media_queries.css"); /*  19. Media Queries                  */
 
-/* Media Queries import is at the bottom of this page                     */
 
 
 
@@ -269,3 +269,4 @@
 
 
 @import url("_media_queries.css"); /*      . Media Queries       */
+
