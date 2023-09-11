@@ -1,0 +1,44 @@
+/* 
+-------------------
+--. Index
+-------------------
+*/
+
+.productbox { /* used for events and exhibits */
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    border: 5px solid transparent;
+}
+
+.h_section2 {
+    display: flex;
+  }
+  .child_painting {
+    background-image: url(/images/billetto-editorial-334686.jpg);
+    background-size: cover;
+    background-position-x: right;
+    width: 30rem;
+    height: 20rem;
+    flex: 2;
+    margin: 2rem 0;
+  }
+  .h_section2_info {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    flex:1; 
+    margin: 1rem;
+  }
+  .h_section2_info p {
+    margin: 1rem auto;
+    width: 90%;
+  }
+  .human_body {
+    background-image: url(/images/samuel-zeller-113381.jpg);
+    background-size: cover;
+    background-position: 50%;
+    flex: 1;
+    margin: 2rem 0;
+  }

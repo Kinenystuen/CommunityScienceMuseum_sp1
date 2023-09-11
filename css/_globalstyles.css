@@ -1,0 +1,79 @@
+/* 
+-------------------
+2. Global styles
+-------------------
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--creamwhite);
+    font-family: "Dosis", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    position: relative;
+}
+body {
+    margin: 0px;
+    font-family: "Epilogue", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: medium;
+    background-color: var(--creamwhite);
+    color: var(--dark_black);
+}
+body h1 {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 500;
+    margin: 0.5rem;
+    color: var(--creamwhite);
+}
+
+nav {
+    list-style: none;
+    margin: 0;        /* Remove default margin */
+    padding: 0;       /* Remove default padding */
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-family: Dosis, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+}
+
+button {
+    border: none;
+    background-color: none;
+}
+
+input, textarea { /*removing default values and adds own - forms*/
+    border: none;
+    background-color: var(--gray);
+    padding: 0.4rem;
+    margin: 0.2rem 0;
+    border-radius: 3px;
+}
+input:focus , textarea:focus {
+    outline: 1px solid var(--dark_black);
+}
+label {
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding: 0.2rem;
+}
+
+
+/* Other global selectors */
+
+.images {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hidden_element {
+    display: none;
+}

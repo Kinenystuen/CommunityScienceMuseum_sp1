@@ -1,0 +1,27 @@
+/* 
+-------------------
+12. Forms
+-------------------
+*/
+
+/*newsletter */
+.newsletter {
+    display: flex;
+    flex-direction: column;
+}
+.newsletter legend,  .newsletter{
+    font-family: "Dosis", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    margin: 0.2rem;
+    padding: 0.3rem;
+}
+.checkbox {
+    content: url(/Icons/checkbox.svg);
+    margin-right: 0.2rem;
+}
+.checkbox:hover {
+    content: url(/Icons/checkboxhover.svg);
+}
+.checkbox:checked {
+    content: url(/Icons/checkboxchecked.svg);
+}

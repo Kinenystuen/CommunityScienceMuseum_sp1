@@ -1,0 +1,271 @@
+/* Content 
+---------------------
+
+1. Variables
+2. Global styles
+3. Header menu + hamburger + logo
+4. Header
+5. Footer
+6. Colors
+7. Text
+8. Padding + margin + gap
+9. Width - height 
+10. Buttons
+11. Flex and grids
+12. Forms
+13. Icons
+14. Index page
+15. Information page
+16. Visit us page
+17. About us page
+18. Contact us page
+
+19. Media Queries 
+
+*/
+
+@import url("_variables.css"); /*       1. variables                      */
+@import url("_globalstyles.css"); /*    2. Global styles                  */
+@import url("_headermenu.css"); /*      3. Header menu + hamburger + logo */
+@import url("_header.css"); /*          4. Header                         */
+@import url("_footer.css"); /*          5. Footer                         */
+@import url("_colors.css"); /*          6. Colors                         */
+@import url("_text.css"); /*            7. Text                           */
+@import url("_padding_margin.css"); /*  8. Padding/margin classes         */
+@import url("_width_height.css"); /*    9. Width height classes           */
+@import url("_buttons.css"); /*        10. Buttons                        */
+@import url("_flex_grids.css"); /*     11. Flex and grids                 */
+@import url("_forms.css"); /*          12. Forms                          */
+@import url("_icons.css"); /*          13. Icons                          */
+
+@import url("_index.css"); /*          14. Index page                     */
+@import url("_information.css"); /*    15. Information page               */
+@import url("_visit_us.css"); /*       16. Visit us page                  */
+@import url("_about_us.css"); /*       17. About us page                  */
+@import url("_contact_us.css"); /*     18. Contact us page                */
+
+/* Media Queries import is at the bottom of this page                     */
+
+
+
+/* Selectors used at multiple places or not fit in categorie */
+
+.right {
+    right: 0;
+}
+
+/* Links selectors */
+.links a{
+    font-size: 0.8rem;
+    color: var(--dark_black);
+}
+.links_f li:nth-child(1) {
+    padding: 0.6rem 0rem 0rem 0rem;
+}
+.links a p, .links a h4 {
+    margin: 0.5rem;
+    padding: 0.4rem 0rem 0.4rem 0.5rem;
+    width: 80%;
+    font-weight: 400;
+}
+.links a p:hover, .links a h4:hover {
+    background-color: var(--gray);
+}
+
+/*  section info - connected to triobuttons  used at homepage and about us  */
+.section_buttons {
+    height: 15rem;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    align-items: center;
+}
+.info_box {
+    position: absolute;
+    display: flex;
+    left: 0;
+}
+.I_height img {
+    height:100%;
+    object-fit: contain;
+    padding-left: 10vw;
+}
+.I_height {
+    height: 1.83rem;
+    margin: 0;
+    background-color: var(--gray);
+    box-sizing: content-box;
+}
+.triangle { /* adds the triangle to the info pillar at homepage and about us */
+    height: 0rem;
+    border-top: 1.5rem solid transparent;
+    border-bottom: 1.5rem solid transparent;
+    border-left: 2rem solid var(--gray);
+  }
+
+.product_img { /* used on images */
+    height: 40vh;
+    overflow: hidden;
+    }
+.product_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+}
+.productbox h3, .productbox p {
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    margin: 0;
+    padding: 0.4rem 0 0.2rem 0;
+    border-bottom: 4px solid var(--green_logo_color);
+}
+.productbox:hover {
+    border: 5px solid var(--green_logo_color);
+    background-color: var(--green_logo_color);
+}
+
+/* Explore section used at homepage and visit us page */
+.h_s_explore {
+    background-color: var(--white);
+    padding: 2% 0 0 0;
+}
+.explore_box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+}
+.explore_box h3 {
+    position: absolute;
+    z-index: 50;
+}
+.explore_text {
+    top: 10px;
+    left: 14px;
+    padding: 1rem 2rem;
+    font-family: "Epilogue", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.explore_box:hover .explore_text {
+    background-color: var(--blue_darker);
+    color: var(--white);
+    font-weight: 300;
+}
+
+.explore_box .product_img img{
+    position: absolute;
+    width: 97%;
+    height: 97%;
+    top: 10px;
+    left: 14px;
+}
+.explore_box:hover .product_img img {
+    transform: translate(-12px, -10px);
+}
+.black_square {
+    background-color: var(--dark_black);
+    position: absolute;
+    width: 97%;
+    height: 97%;
+    top: -16px;
+    left: -40px;
+}
+.explore_box:hover .black_square {
+    transform: translate(14px, 10px);
+    background-color: var(--blue_darker);
+}
+
+/* Events and exhibits pages */
+
+.remarea {
+    height: 2rem;
+    width: 100%;
+    position: relative;
+    background-color: var(--green_logo_color);
+}
+.newsbox, .exhibitbox {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    z-index: 1;
+}
+.newsbox .title {
+    border-bottom: 5px solid var(--green_logo_color);
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+.exhibitbox .title {
+    position: absolute;
+    background-color: var(--white);
+    padding: 0.6rem 1rem;
+    top: -2.3rem;
+    left: 1rem;
+    font-size: 1.2rem;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.newsbox p, .exhibitbox p {
+    margin: 0.5rem 1rem 1rem;
+}
+.newsbox_img {
+    position: relative;
+    margin-top: auto;
+    padding-top: 1rem;
+}
+.event_date {
+    margin: 0;
+    position: absolute;
+    padding: 0.7rem 1rem;
+    top: -0.4rem;
+    right: 2%;
+    z-index: 99 ;
+    font-weight: 500;
+    color: var(--white);
+    font-size: 1.3rem;
+}
+.celso {         /* Moon image */
+    width: 100%;
+    height: 40vh;
+    background: linear-gradient(180deg, #222525 0%, rgba(34, 37, 37, 0.00) 50.20%, #222525 95.17%), url(/images/celso-405219.jpg), lightgray 50% / cover no-repeat;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+}
+
+.info_img, .contact_img {
+    flex: 2;
+    height: 50vh;
+    overflow: hidden;
+    }
+.info_img img, .contact_img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.group_info {
+    display: flex;
+    flex-direction: column;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: var(--creamwhite);
+    margin: auto 0;
+    flex: 1;
+}
+.text_img_group {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+}
+.opening_hours ul {
+    padding: 1rem;
+}
+
+
+@import url("_media_queries.css"); /*      . Media Queries       */

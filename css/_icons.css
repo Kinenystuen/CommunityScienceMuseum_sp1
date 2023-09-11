@@ -1,0 +1,20 @@
+/* 
+-------------------
+13. Icons
+-------------------
+*/
+
+.instagram {
+    content: url(/Icons/🦆\ icon\ _Instagram\ Square_.svg);
+    margin: 0;
+}
+.instagram:hover {
+    content: url(/Icons/🦆\ icon\ _Instagram\ Square_hover.svg);
+}
+.facebook {
+    content: url(/Icons/🦆\ icon\ _Facebook\ Square\ icon_.svg);
+    margin: 0;
+}
+.facebook:hover {
+    content: url(/Icons/🦆\ icon\ _Facebook\ Square\ icon_hover.svg);
+}

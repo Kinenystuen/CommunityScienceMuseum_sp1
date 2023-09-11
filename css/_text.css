@@ -1,0 +1,23 @@
+/* 
+-------------------
+7. Text selectors
+-------------------
+*/
+
+/* font weight */
+    .fw_600 {
+        font-weight: 600;
+    }
+
+
+/* font size */
+    .fontsize1_1rem {
+        font-size: 1.1rem;
+    }
+
+    .big_title { /* Used for headings at information page  */
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        font-family: "Epilogue";
+        margin: 0.2rem;
+    }

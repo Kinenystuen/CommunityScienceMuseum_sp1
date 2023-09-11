@@ -1,0 +1,42 @@
+/* 
+-------------------
+10. Buttons
+-------------------
+*/
+
+.button { /*uni code for buttons - then add other classes for color and other specifics - find color for buttens at colors*/ 
+    display: flex;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 1rem 1rem;
+    width: fit-content;   
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button:hover,  .triobutton:hover {
+    background-color: var(--gray);
+    color: var(--black);
+  }
+
+
+
+  .triobuttons {
+    display: flex;
+    margin: auto 0;
+    max-width: 1000px; 
+    justify-content: center;
+    margin: auto;
+    max-width: 80%;
+  }
+  .triobutton {
+    width: 14rem; 
+    height: 1rem;
+    margin: 0 2%;
+    box-sizing: content-box;
+    align-self: center;
+  }

@@ -1,0 +1,64 @@
+/* 
+-------------------
+6. Color selectors
+-------------------
+*/
+
+/* color classes - to use for color for buttons and also other places if fitted */
+
+/* For buttons: */
+    .b_blue {
+        background-color: var(--blue_darker);
+        color: var(--creamwhite);
+    }
+    .b_green {
+        background-color: var(--green_logo_color);
+        color: var(--white);
+    }
+
+
+/*Background-colors */
+    .gray_background {
+        background-color: var(--gray);
+    }
+    .dark_background {
+        background-color: var(--dark_black);
+        width: 100%;
+    }
+    .creamwhite_background {
+        background-color: var(--creamwhite);
+        width: 100%;
+    }
+    .white_background {
+        background-color: var(--white);
+        width: 100%;
+    }
+
+
+/*Plain colors */
+    .text_black {
+        color: var(--dark_black);
+    }
+    .text_white {
+        color: var(--white);
+    }
+    .text_green {
+        color: var(--green_logo_color);
+    }
+
+
+/* Different border/underline classes */
+    .green_underline {
+        border-bottom: 3px solid var(--green_logo_color);
+        width: fit-content;
+    }
+    .blue_underline {
+        border-bottom: 3px solid var(--blue_darker);
+        width: fit-content;
+    }
+    .border_green {
+        border: 1rem solid var(--green_logo_color);
+    }
+    .border_blue {
+        border: 1rem solid var(--blue_darker);
+    }

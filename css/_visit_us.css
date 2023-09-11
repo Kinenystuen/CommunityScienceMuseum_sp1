@@ -1,0 +1,65 @@
+/* 
+-------------------
+--. Visit us page
+-------------------
+*/
+
+.visit_g_one { /*opening hours*/
+    grid-column: 2/3;
+    grid-row: 1;
+}
+.visit_g_two { /*picture*/
+    grid-column: 1;
+    grid-row: 1/3;
+}
+.visit_g_three { /*prices */
+    grid-column: 3;
+    grid-row: 1/3;
+}
+.visit_g_four { /*button */
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.visit_g_four_spes {
+    font-size: 1.6rem;
+    width: 100%;
+    height: 100%;
+}
+
+.map_icon::before {
+    content: url(/Icons/pin_icon.svg);
+    padding-right: 1rem;
+}
+.hoverlink:hover {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.science_img {
+    width: 100%;
+    height: 100%;
+    object-fit: fit;
+}
+.science_img img {
+    object-position: 20%;
+}
+.visitus_page:hover .product_img img{
+    transform: none;
+}
+.visitus_page:hover .black_square{
+    transform: none;
+    background-color: var(--black);
+}
+.visitus_page .explore_box {
+    width: 20rem;
+}
+.visitus_page:hover .explore_text {
+    background-color: var(--gray);
+    color: var(--dark_black);
+    font-weight: 400;
+    cursor:default;
+}

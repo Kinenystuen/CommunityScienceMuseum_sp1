@@ -1,0 +1,68 @@
+/* 
+-------------------
+5. Footer
+-------------------
+*/
+
+footer {
+    border-top: 1px solid var(--dark_black);
+    margin-bottom: 3rem;
+}
+.f_boxes {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+}
+.flexone {
+    flex: 1;
+}
+.flexone:nth-child(4) {
+    align-self: center;
+}
+.csm_i {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.csm_i p {
+    margin: 0;
+}
+.contact_us, .csm_spes .links a:nth-child(1) {
+    margin: 1rem 0;
+}
+.open_hours p, .contact_us p, .boxmargin .item_l, .boxmargin .ho_day_t , .margin02rem{
+    margin: 0.2rem;
+}
+.item {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.ho_day_t {
+    padding-left: 0.5rem ;
+}
+.news_b {
+    display: flex;
+    margin: 1rem auto;
+    align-items:center;
+
+}
+.send_b {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+}
+.center_n {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.social_media { /*div = social media */
+    display: flex;
+    justify-content: left;
+    gap: 1rem;
+    margin: 1rem;
+}

@@ -1,0 +1,23 @@
+/* 
+-------------------
+9. Width and height selectors
+-------------------
+*/
+
+.content_wrap { /* add as page margin */
+    width: 80%;
+    margin: 0px auto;
+    max-width: 1600px;
+}
+
+.w_fit_content {
+    width: fit-content;
+}
+
+.w_100 {
+    width: 100%;
+}
+
+.space {
+    padding: 2rem 0;
+}

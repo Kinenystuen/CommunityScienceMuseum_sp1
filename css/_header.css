@@ -1,0 +1,71 @@
+
+/* 
+-------------------
+4. Header
+-------------------
+*/
+
+.header_titlebox { /*h2 title box */
+    font-size: 1.8rem;
+    font-weight: 400;
+    width: fit-content;
+    padding: 0.5rem 1.6rem 0.6rem 10.4% ;
+    margin: 2rem 0;
+}
+#header_homepage { /*Used for homepage only - taking up all the view */
+    width: 100%;
+    height: 100vh;
+}
+#header_page { /* Used for most pages - Telling the header picture to cover its content(header-title) not the whole page */
+    height: fit-content;
+    padding: 0;
+}
+#header_info {  /*used only for information page - as it is used for background for some information boxes and header-title */
+    height: fit-content;
+    padding: 0;
+    padding-bottom: 3rem;
+}
+
+
+
+.header_text_h { /*home page*/
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.header_text_h h2 { /*home page*/
+    font-weight: 400;
+}
+.header_text_o { /*other pages */
+    margin: 0;
+    display: flex;
+    height: 100%;
+    padding: 1.4rem 0 0 10% ;
+}
+.header_text_o h1 { /*other pages */
+    text-align: left;
+    margin-top: 6rem;
+    text-transform: uppercase;
+}
+.header_p {
+    font-family: Dosis, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+}
+
+
+.headerline {
+    background: var(--blue-playful, #3498DB);
+    width: 100%;
+    height: 0.3125rem;
+}
+
+.header_image {
+    background-color: var(--dark_black);
+    background: linear-gradient(46deg, rgba(52, 152, 219, 0.60) 0%, rgba(86, 27, 73, 0.60) 47.40%, rgba(63, 167, 82, 0.60) 100%), url(/images/toa-heftiba-412579.jpg), lightgray 50% / cover no-repeat;
+    background-size:cover;
+    background-position: 50%;
+}
