@@ -66,6 +66,10 @@ label {
     padding: 0.2rem;
 }
 
+footer ul {
+    list-style: none;
+}
+
 
 /* Other global selectors */
 
