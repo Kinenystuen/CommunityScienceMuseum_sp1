@@ -163,7 +163,7 @@ Content:
     .h_section2 {
         flex-direction: column;
     }
-    .child_painting, .human_body {
+    .child_painting {
         flex: auto;
         width: 100%;
         height: 16rem;
@@ -187,6 +187,13 @@ Content:
     .visit_g_four_spes {
         font-size: 1.3rem;
     }
+    #exhibition_spaces .grid3fit {
+        grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));
+    }
+    #exhibition_spaces .product_img { /* used on images */
+        height: 20vh;
+        overflow: hidden;
+    }
 }
 
 
@@ -200,5 +207,12 @@ Content:
     
     .triangle { /*for triobutton section */
         display: none;
+    }
+    #exhibition_spaces .grid3fit {
+        grid-template-columns:repeat(auto-fit, minmax(100px, 1fr));
+    }
+    #exhibition_spaces .product_img { /* used on images */
+        height: 20vh;
+        overflow: hidden;
     }
 }
