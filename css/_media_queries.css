@@ -187,10 +187,10 @@ Content:
     .visit_g_four_spes {
         font-size: 1.3rem;
     }
-    #exhibition_spaces .grid3fit {
+    #exhibition_spaces_hp .grid3fit {
         grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));
     }
-    #exhibition_spaces .product_img { /* used on images */
+    #exhibition_spaces_hp .product_img { /* used on images */
         height: 20vh;
         overflow: hidden;
     }
@@ -208,10 +208,10 @@ Content:
     .triangle { /*for triobutton section */
         display: none;
     }
-    #exhibition_spaces .grid3fit {
+    #exhibition_spaces_hp .grid3fit {
         grid-template-columns:repeat(auto-fit, minmax(100px, 1fr));
     }
-    #exhibition_spaces .product_img { /* used on images */
+    #exhibition_spaces_hp .product_img { /* used on images */
         height: 20vh;
         overflow: hidden;
     }

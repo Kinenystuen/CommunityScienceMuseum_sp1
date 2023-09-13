@@ -219,7 +219,7 @@
     margin-top: auto;
     padding-top: 1rem;
 }
-.event_date {
+.event_date { /* news page */
     margin: 0;
     position: absolute;
     padding: 0.7rem 1rem;
