@@ -99,15 +99,17 @@ Content:
         margin: 0;  
         padding: 0;
         overflow-y: auto;
-        height: 60vh ;
+        height: 67vh ;
     }
     .nav_right ul li {
         padding-left: 1rem;
     }
     .floating_nav,.nav_right    {
-        position: relative;
         scroll-behavior: smooth;
+        width: 100%;
+        
     }
+    
     .floating_nav {
         background-color: var(--creamwhite);
     }
