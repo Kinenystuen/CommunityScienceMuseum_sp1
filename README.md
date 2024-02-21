@@ -1,6 +1,6 @@
 
 # Semester Project 1 - Community Science Museum 
-<a href="https://sciencemuseumsp1.netlify.app/"> <img src="https://kineon-portfolio.netlify.app/img/CSM_semester_project.png" /></a>
+<a href="https://sciencemuseumsp1.netlify.app/"> <img src="https://kineon.netlify.app/img/CSM_semester_project.png" /></a>
 
 ## About the project
 
